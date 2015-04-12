@@ -14,7 +14,7 @@ summary(TwoDateData)
 TwoDateData$DateTime <-strptime(paste(TwoDateData[,1],TwoDateData[,2]), "%d/%m/%Y %H:%M:%S")
 
 #start PNG device
-png(file = "plot2.png")
+png(file = "plot2.png",bg = "transparent")
 #generate plot2
 plot(TwoDateData$DateTime, TwoDateData$Global_active_power, 
      type = "l",
