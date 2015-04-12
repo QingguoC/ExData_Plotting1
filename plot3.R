@@ -14,7 +14,7 @@ summary(TwoDateData)
 TwoDateData$DateTime <-strptime(paste(TwoDateData[,1],TwoDateData[,2]), "%d/%m/%Y %H:%M:%S")
 
 #start PNG device
-png(file = "plot3.png")
+png(file = "plot3.png",bg = "transparent")
 #generate plot3
 plot(TwoDateData[,10], TwoDateData[,7],
      type = "l",
